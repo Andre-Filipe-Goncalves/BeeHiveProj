@@ -5,7 +5,8 @@ https/res.cloudinary.com/dxzkpsxhf/image/upload/v1615492549/shutterstock_7284274
 
 https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492549/shutterstock_728427460bis_plp7sz.jpg
 
-//Beehive Gems
+//Beehive Gems page
+
 
 https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615575876/pollen_aqdhhi.png
 
