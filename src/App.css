@@ -58,7 +58,6 @@ padding-right: 20px;
   border: rgb(207, 124, 29);
   padding-right: 20px;
   border-radius: 70px;
-
 }
 
 .gems-container {
@@ -70,17 +69,17 @@ padding-right: 20px;
   margin: 30px;
 }
 
-h1 {
+.Gems h1 {
   color:rgb(230, 197, 50);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-h2 {
+.Gems h2 {
   color:rgb(218, 142, 56);
   font-family: 'Courier New', Courier, monospace;
 }
 
-p {
+.Gems p {
   color:rgb(8, 8, 8);
   font-family: Calibri, sans-serif;
 }
