@@ -153,7 +153,7 @@ padding-right: 20px;
 
 /*Responsiveness*/
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
   .Gems {
     flex-wrap: wrap;
   }
