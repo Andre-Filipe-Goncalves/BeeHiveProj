@@ -40,5 +40,47 @@
 }
 
 
+/* Gems*/
 
+.Gems {
+  width: 80%;
+  margin: auto;
+}
 
+.Gems p {
+text-align: justify;
+padding-right: 20px;
+}
+
+.gems-container img {
+  width: 400px; 
+  height: auto;
+  border: rgb(207, 124, 29);
+  padding-right: 20px;
+  border-radius: 70px;
+
+}
+
+.gems-container {
+  box-sizing: border-box;
+	padding: 10px;
+  display: flex;
+  border-radius: 25px;
+  background-color: rgb(240, 240, 176);
+  margin: 30px;
+}
+
+h1 {
+  color:rgb(230, 197, 50);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h2 {
+  color:rgb(218, 142, 56);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  color:rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+}
