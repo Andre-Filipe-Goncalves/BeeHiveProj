@@ -22,6 +22,14 @@ const Neighbours = () => {
     }
 
     return (
+        <div className="savingbees">
+            
+                <h1>Find Your Neighbour</h1>
+                <div className="headerText">
+                    <p>Having a friendly neighbour is the best! What if you could choose them?</p>
+                    <p className="bottomTextP">(.. But be careful about some undesired neighbourhood)</p>
+                </div>
+            
         <div className="neighbours">
             <div className="checkbox">
                 <div className="checkboxHeader">Choose your Garden</div>
@@ -50,7 +58,7 @@ const Neighbours = () => {
                 .map(bee => (<BeeCard data={bee} key={bee.id}/>))
                 }
             </div>
-            
+        </div>
         </div>
     )
 }
