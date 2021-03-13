@@ -1,3 +1,87 @@
+/* General CSS*/
+body {
+  margin: 0%;
+}
+
+h1 {
+  color:rgb(167, 106, 37);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+  text-shadow: 2px 2px rgb(253, 249, 249);
+  text-align: center;
+  padding: 50px;
+}
+
+h2 {
+  color:rgb(214, 162, 103);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+}
+
+p {
+  font-family: Calibri, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  padding: 20px;
+}
+
+/* NavBar in App.jsx*/
+.Nav {
+  display: flex;
+  background-color:white;
+  justify-content: center;
+}
+
+.Nav li { 
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  list-style-type: none;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+ul {
+  margin:0px;
+  padding:0px;
+}
+
+ul.Nav {
+  padding:50px;
+}
+
+a {
+  color: rgb(167, 106, 37);
+  text-decoration: none; 
+
+}
+
+a:hover {
+  color: rgb(214, 162, 103);
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+}
+
+/* Homepage*/
+
+.honeycomb {
+  float:right;
+  align-items: center;
+  padding-top: 20%;
+  padding-right: 5%;
+}
+
+.textonimage {
+  font-size: 60px;
+  background-color: white;
+  border-radius: 25px;
+  color:rgb(167, 106, 37);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 30px;
+}
+
+/* BeeImportance*/
+
 .BeeImportance {
   position: relative;
   z-index: 1;
@@ -30,14 +114,16 @@
   text-align: justify;
 }
 
-.BeeImportance::before {
+.BeeImportance-general::before {
   content: "";
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
   width: 100%; 
   height: 120%;  
   opacity: .7; 
+  height: 220%;  
+  opacity: .4; 
   z-index: -1;
   background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
   background-size: cover;
@@ -129,12 +215,10 @@ padding-right: 20px;
 }
 
 .gems-container img {
-  width: 400px; 
-  height: auto;
-  border: rgb(207, 124, 29);
+  width: auto; 
+  height: 300px;
   padding-right: 20px;
-  border-radius: 70px;
-
+  align-items: center;
 }
 
 .gems-container {
@@ -142,9 +226,9 @@ padding-right: 20px;
 	padding: 10px;
   display: flex;
   border-radius: 25px;
-  background-color: rgb(240, 240, 176);
-  margin: 30px;
-}
+  background-color:#ffffff;
+  margin-bottom: 5%;
+  align-items: center;
 
 h1 {
   color:rgb(230, 197, 50);
@@ -153,14 +237,77 @@ h1 {
   
 }
 
-h2 {
-  color:rgb(218, 142, 56);
-  font-family: 'Courier New', Courier, monospace;
+.Gems::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 220%;  
+  opacity: .4; 
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
+  background-size: cover;
 }
 
-p {
-  color:rgb(8, 8, 8);
-  font-family: Calibri, sans-serif;
+/*Responsiveness*/
+
+@media screen and (max-width:900px) {
+  .Gems {
+    flex-wrap: wrap;
+  }
+  .gems-container { 
+    border: rgb(207, 124, 29);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gems-container img {
+    width: 80%; 
+    height: auto;
+    padding:0px;
+  }
+
+  .textonimage {
+    font-size: 30px;
+    background-color: white;
+    border-radius: 25px;
+    color:rgb(167, 106, 37);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    text-align: center;
+  }
+  .honeycomb {
+    float: none;
+    padding-top: 30%;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .honeycomb::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    z-index: -1;
+    background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492549/shutterstock_728427460bis_plp7sz.jpg");
+    background-size: cover;
+  }
+
+  .Nav li { 
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 8px;
+  }
+  ul.Nav {
+    padding:30px;
+    text-align: left;
+    flex-direction: column;
+  }
 }
 
 

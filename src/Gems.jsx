@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+// import NavBar from './components/NavBar';
 
 const Gems = () => {
     return (
@@ -14,7 +15,6 @@ const Gems = () => {
                     As an antiseptic treatment: to allow a healthy environment for the development of broods.
                     The ideal period for collecting propolis is during the winter season, because at this time it is more easily removed from its supports.
                     </p>
-
             </div>
             <div class='gems-container'>
                     <img src='https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615575889/honey_pjxymk.png' alt='Honey' />
@@ -30,7 +30,6 @@ const Gems = () => {
                     As for the larvae, their initial weight increases 1800 times in just a few days. That shows how nourishing Royal Jelly is for bees!
                     The pale yellow, strong-smelling substance contains: lipids, carbohydrates, water, proteins, vitamins and trace elements.
                     </p>
-
             </div>
             <div class='gems-container'>
                 <img src='https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615575876/pollen_aqdhhi.png' alt='Pollen' />
