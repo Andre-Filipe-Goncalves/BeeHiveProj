@@ -153,6 +153,7 @@ padding-right: 20px;
   background-color:#ffffff;
   margin-bottom: 5%;
   align-items: center;
+
 }
 
 .Gems::before {
@@ -184,6 +185,7 @@ padding-right: 20px;
     height: auto;
     padding:0px;
   }
+
   .textonimage {
     font-size: 30px;
     background-color: white;
