@@ -7,10 +7,19 @@ const SavingBees = () => {
                 <br/>
                 <br/>
                 <div className="topiccontainer">
-                    <h2>Why are bees in danger?</h2>
+                <h1>Why are bees in danger?</h1>
                     <br/>
                     <p>Bees have become increasingly endangered, which is confirmed by the recent reports by world-renowned organisations such as the United Nations, the IUCN or Greenpeace. The 2015 IUCN report states that nearly 10% of bees are facing extinction, and around 5% of them are probably endangered, while no data is available for nearly 57% of species. 
-        The number of pollinators is in decline around the world, while the need for pollination is on the rise, especially in developing countries. In some parts, this situation has become known as ”the pollinator crisis”.</p>
+                    The number of pollinators is in decline around the world, while the need for pollination is on the rise, especially in developing countries. In some parts, this situation has become known as ”the pollinator crisis”.</p>
+                    <br/>
+                    <div className="dangercontainer">
+                        <img src="https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615629478/varoza_czs_mcmfmr.jpg" />
+                        <img src="https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615629469/nosema-nosemose_amu8ed.jpg" />
+                        <img src="https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615629469/asian-hornet-preying-on-a-bee-pascal-goetgheluckscience-photo-library_ovsuvg.jpg" />
+                    </div>
+                    <figcaption>From left/top to right/bottom: varroa mites; nosema disease; hornet predating on a bee
+                    </figcaption>
+                    <br/>
                     <br/>
                     <h3>The main reasons for the mortality of bees include:</h3>
                     <ul>
@@ -21,12 +30,12 @@ const SavingBees = () => {
                         <li>Urbanisation;</li>
                         <li>With the loss of bees comes the loss of many plants.</li>
                         <li>The diversity and evolution of insects likely played a major role in the evolution of flowering plants. We could lose this diversity that has developed over hundreds of millions of years in just decades.</li>
-                        <li>Climate change;</li>
+                        <li>Pollution and climate change;</li>
                         <li>Global trade of low-quality honey, which impacts the beekeeping economy.</li>
                     </ul>
                     <br/>
                     <br/>
-                    <div className="beedeathvideo">
+                    <div className="beevideo">
                     <iframe src="https://www.youtube.com/embed/GqA42M4RtxE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <br/>
@@ -37,18 +46,18 @@ const SavingBees = () => {
                 <br/>
                 <br/>
                 <div className="topiccontainer">
-                <h2>What are the consequences?</h2>
+                <h1>What are the consequences?</h1>
                 <br/>
                 <p>If bee families continue to disappear in Europe at current or even higher rates, this could lead to the breakdown of the economy and put our health and well-being at risk.
-    In addition to being one of the major pollinators, thus ensuring food and food security, sustainable agriculture and biodiversity, bees significantly contribute to the mitigation of climate change and environmental conservation. In the long-term, the protection of bees and the beekeeping sector can help reduce poverty and hunger, as well as preserve a healthy environment and biodiversity. With the loss of bees comes the loss of many plants.</p>
-    <br/>
+                In addition to being one of the major pollinators, thus ensuring food and food security, sustainable agriculture and biodiversity, bees significantly contribute to the mitigation of climate change and environmental conservation. In the long-term, the protection of bees and the beekeeping sector can help reduce poverty and hunger, as well as preserve a healthy environment and biodiversity. With the loss of bees comes the loss of many plants.</p>
+                <br/>
 
-    <p>Scientific studies have proven that bees have become increasingly endangered.  It is only through joint efforts that we can ensure the protection of bees and their habitats. A study published in the journal Lancet predicts that smaller consumption of fruit and vegetables due to climate change which also affects pollinators, will cause twice as many deaths by 2050 than hunger and malnutrition.</p>
+                <p>Scientific studies have proven that bees have become increasingly endangered.  It is only through joint efforts that we can ensure the protection of bees and their habitats. A study published in the journal Lancet predicts that smaller consumption of fruit and vegetables due to climate change which also affects pollinators, will cause twice as many deaths by 2050 than hunger and malnutrition.</p>
                 </div>
                 <br/>
                 <br/>
                 <div className="topiccontainer">
-                <h2>What is being done to save them?</h2>
+                <h1>What is being done to save them?</h1>
                 <br/>
                 <p>There are currently many projects worldwide that are trying to raise awareness for the bees' importance to us and all the ecosystems. We're listing some of the most relevant below:</p>
                 <br/>
@@ -66,7 +75,7 @@ const SavingBees = () => {
                     <br/>
                     <div>
                     <li>Elephant and Bees Project, Kenya</li>
-                    <p>What began as a strategic plan to save the elephants, grew into a conservation project for elephants and bees alike. The Elephant and Bees Project uses beehive fences – a natural deterrent of elephants – to keep elephants off of farmland, reducing crop damage. This not only increases protected habitats for bees, but also helps educate farmers on the relationship between bees and crop health.</p>
+                    <p>What began as a strategic plan to save the elephants, grew into a conservation project for elephants and bees alike. The Elephant and Bees Project uses beehive fences to keep elephants off of farmland, reducing crop damage.</p>
                     </div>
                     <br/>
                     <div>
@@ -81,7 +90,7 @@ const SavingBees = () => {
                     <br/>
                     <div>
                     <li>Pesticide Action Network Europe, Belgium</li>
-                    <p>Founded in 1987, the Pesticide Action Network (PAN Europe) is a network of consumer, public health, and environmental organizations, trades unions, women's groups, and farmer associations from across Europe. As advocates for a pesticide-free Europe, PAN Europe works closely with government representatives to try to reduce the use of hazardous pesticides</p>
+                    <p>The Pesticide Action Network (PAN Europe) is a network of consumer, public health, and environmental organizations, trades unions, women's groups, and farmer associations from across Europe. PAN Europe works closely with government representatives to try to reduce the use of hazardous pesticides</p>
                     </div>
                     <br/>
                     <div>
@@ -96,7 +105,7 @@ const SavingBees = () => {
                     <br/>
                     <div>
                     <li>Slovenian Beekeepers Association, Slovenia</li>
-                    <p>The Slovenian Beekeepers Association, originally founded in the late 1800s, offers key beekeeping knowledge and support within the country. The Association advocates and raises awareness on behalf of bees and their importance in the environment, provides beekeeping camps and workshops, and publishes a monthly beekeeping magazine.</p>
+                    <p>The Slovenian Beekeepers Association offers key beekeeping knowledge and support within the country. The Association advocates and raises awareness on behalf of bees and their importance in the environment, provides beekeeping camps and workshops, and publishes a monthly beekeeping magazine.</p>
                     </div>
                     <br/>
                     <div>
