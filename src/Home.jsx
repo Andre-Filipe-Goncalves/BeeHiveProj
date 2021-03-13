@@ -3,11 +3,10 @@ import './App.css';
 
 
 const Homepage = () => {
-
-
     return (
       <div class="honeycomb">
-    </div>
+        <div class="textonimage">Let's save our bees!</div>
+      </div>
     );
 };
 
