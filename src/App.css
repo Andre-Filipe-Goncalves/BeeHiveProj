@@ -3,6 +3,31 @@
   z-index: 1;
   font-size: 30px;
   text-align: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.savingbees h2 {
+  color: rgb(218, 142, 56);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
+}
+
+.savingbees h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.BeeImportance p {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
 }
 
 .BeeImportance::before {
@@ -12,7 +37,7 @@
   left: 0;
   width: 100%; 
   height: 120%;  
-  opacity: .4; 
+  opacity: .7; 
   z-index: -1;
   background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
   background-size: cover;
@@ -30,15 +55,66 @@
   background-size: cover;
 }
 
-.BeeText{
-  border-radius: 25px;
-  background-color: whitesmoke;
-  box-sizing: border-box;
-  padding: 10px;
+
+
+.beephotos {
   display: flex;
-  margin: 100px;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
 }
 
+.beephotos img {
+  width: 200px;
+  height: 200px;
+  height: auto;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.beephotos img:hover {
+  transform: scale(2.5);
+}
+
+.topiccontainer {
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: rgb(240, 240, 176);
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+  width: 70%;
+}
+
+.beevideo iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  border: solid 1px rgb(218, 142, 56);
+  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: center;
+}
+
+.beevideo {
+  overflow:hidden;
+  padding-bottom:30%;
+  position:relative;
+  height:100%;
+  width:60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
 
 /* Gems*/
 
@@ -72,7 +148,9 @@ padding-right: 20px;
 
 h1 {
   color:rgb(230, 197, 50);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 4px 4px black
+  
 }
 
 h2 {
@@ -84,3 +162,15 @@ p {
   color:rgb(8, 8, 8);
   font-family: Calibri, sans-serif;
 }
+
+
+
+.slide-container {
+  width: 70%;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
