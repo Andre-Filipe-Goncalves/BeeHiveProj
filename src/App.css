@@ -1,8 +1,130 @@
 .checkbox {
-  display: flex;
-  flex-direction: column;
   height: 200px;
   border: 1px solid red;
   width: 200px;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.neighbours {
+  display: flex;
+
+}
+
+.beelist {
+  display: flex;
+  flex-direction: column;
+}
+
+.beecard-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.beepic-wrapper {
+  margin: 5px auto;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.beepic-wrapper img {
+  width: 100px;
+  height: 100px;
+  border-top: 0px;
+}
+
+.beetext-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+  
+  font-family: Calibri, sans-serif;
+  color: rgb(218, 142, 56)
+}
+.funfacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Calibri, sans-serif;
+  font-size: 10px;
+}
+
+.beeprops {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.beeprops h4{
+  margin: 5px 0;
+  font-size: 13px;
+}
+.beeprops p{
+  margin: 5px 0;
+  font-size: 10px;
+}
+
+.temperbox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.sizebox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.namebox{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.familybox{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.funfacts{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.temperbox h4{
+  margin: auto;
+}
+.temperbox p{
+  margin: auto;
+}
+.namebox h4{
+  margin: auto;
+}
+.namebox p{
+  margin: auto;
+}
+.familybox h4{
+  margin: auto;
+}
+.familybox p{
+  margin: auto;
+}
+.sizebox h4{
+  margin: auto;
+}
+.sizebox p{
+  margin: auto;
+}
+
+.funfacts h4 {
+  margin: auto;
+}
+
+.funfacts p{
+  margin: auto;
+  font-style: italic;
 }

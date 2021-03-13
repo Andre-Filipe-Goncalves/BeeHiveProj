@@ -1,18 +1,24 @@
 import React, { useState } from 'react'
 import data from './data'
-import BeeList from './components/NeighboursComponents/BeeList'
+import BeeCard from './components/NeighboursComponents/BeeCard'
 import Checkbox from '@material-ui/core/Checkbox'
 import {FormControlLabel} from '@material-ui/core'
 
 
 const Neighbours = () => {
-    const [beeList, setBeeList] = useState([]);
-    const [isFiltered,setIsFiltered] = useState(false);
-
-    const flowerArray = ["Siberian Wallflower","Chinese Forget-Me-Not","Baby Blue Eyes","Sweet Alyssum","Fleabane Daisy","Blue Flax","Plains Coreopsis","Lance-Leaved Coreopsis","California Poppy","Globe Gilia","Corn Poppy","Lavender Hyssop","Indian Blanket","Purple Coneflower","Bergamot","China Aster","New England Aster"];
+    const [flowerList, setFlowerList] = useState([]);
 
     const toggleCheckbox = event => {
         console.log(`${event.target.value} is ${event.target.checked}`);
+        console.log(`${flowerList}`);
+        
+        setFlowerList((prev) => {
+            if(!event.target.checked){
+                return prev.filter(flower => flower !== event.target.value)
+            } else {
+                return [event.target.value, ...prev]
+            }
+        })
     }
 
     return (
@@ -36,7 +42,14 @@ const Neighbours = () => {
                 <FormControlLabel control={<Checkbox size="small" value="China Aster" onChange={(event) => toggleCheckbox(event)} />} label="China Aster"/>
                 <FormControlLabel control={<Checkbox size="small" value="New England Aster" onChange={(event) => toggleCheckbox(event)} />} label="New England Aster"/>
             </div>
-            <BeeList data={data}/>
+            <div className="beelist">
+
+                {data
+                .filter(bee => bee.flowers.some(flower => flowerList.includes(flower)))
+                .map(bee => (<BeeCard data={bee} key={bee.id}/>))
+                }
+            </div>
+            
         </div>
     )
 }
