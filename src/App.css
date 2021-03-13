@@ -1,3 +1,29 @@
+/* General CSS*/
+
+h1 {
+  color:rgb(167, 106, 37);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+  text-shadow: 2px 2px rgb(253, 249, 249);
+  text-align: center;
+}
+
+h2 {
+  color:rgb(214, 162, 103);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+}
+
+p {
+  font-family: Calibri, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  padding: 20px;
+}
+
+
+/* BeeImportance*/
+
 .BeeImportance {
   position: relative;
   z-index: 1;
@@ -5,7 +31,7 @@
   text-align: center;
 }
 
-.BeeImportance::before {
+.BeeImportance-general::before {
   content: "";
   position: absolute;
   top: 0; 
@@ -32,11 +58,13 @@
 
 .BeeText{
   border-radius: 25px;
-  background-color: whitesmoke;
+  background-color: rgb(253, 249, 249);
   box-sizing: border-box;
   padding: 10px;
   display: flex;
   margin: 100px;
+  width: 80%;
+  margin: auto;
 }
 
 
@@ -65,21 +93,19 @@ padding-right: 20px;
 	padding: 10px;
   display: flex;
   border-radius: 25px;
-  background-color: rgb(240, 240, 176);
+  background-color:rgb(253, 249, 249);
   margin: 30px;
 }
 
-.Gems h1 {
-  color:rgb(230, 197, 50);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.Gems h2 {
-  color:rgb(218, 142, 56);
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.Gems p {
-  color:rgb(8, 8, 8);
-  font-family: Calibri, sans-serif;
+.Gems::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 120%;  
+  opacity: .4; 
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
+  background-size: cover;
 }
