@@ -1,3 +1,4 @@
+/* General CSS */
 .checkbox {
   height: 200px;
   border: 1px solid red;
@@ -149,10 +150,13 @@ h2 {
 }
 
 p {
+  color: rgb(8, 8, 8);
   font-family: Calibri, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   text-align: justify;
   padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* NavBar in App.jsx*/
@@ -232,20 +236,6 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-.savingbees h2 {
-  color: rgb(218, 142, 56);
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  font-weight: bolder;
-  text-shadow: 1px 1px black;
-}
-
-.savingbees h3 {
-  color: rgb(0, 0, 0);
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  font-weight: bolder;
-}
 
 .BeeImportance p {
   color: rgb(8, 8, 8);
@@ -257,7 +247,7 @@ a:hover {
 
 .BeeImportance-general::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%; 
@@ -268,6 +258,8 @@ a:hover {
   z-index: -1;
   background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
   background-size: cover;
+  background-attachment: fixed;
+
 }
 
 .honeycomb::before {
@@ -308,6 +300,7 @@ figcaption {
   transform: scale(2.5);
 }
 
+
 .topiccontainer {
   box-sizing: border-box;
   border-radius: 25px;
@@ -316,6 +309,19 @@ figcaption {
   margin: auto;
   justify-content: center;
   width: 70%;
+}
+
+.topiccontainer ul {
+  text-align: justify;
+  padding: 0;
+}
+
+.topiccontainer li {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 18px;
 }
 
 .beevideo iframe {
@@ -342,6 +348,96 @@ figcaption {
   flex-wrap: wrap;
   margin: auto;
 }
+
+.beevideo iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  border: solid 1px rgb(218, 142, 56);
+  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: center;
+}
+
+/*Saving Bees*/
+
+.savingbees {
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.savingbees::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102%;
+  opacity: 0.7;
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.savingbees h1 {
+  color: rgb(218, 142, 56);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 2px 2px rgb(253, 249, 249);
+}
+
+
+.savingbees h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.projectlist {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.projectlist div {
+  width: 300px;
+  padding: 20px;
+  border: solid 2px rgb(218, 142, 56);
+  border-radius: 15%;
+  margin: 1%;
+}
+
+.projectlist li {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.projectlist p {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+
 
 /* Gems*/
 
@@ -371,11 +467,11 @@ padding-right: 20px;
   margin-bottom: 5%;
   align-items: center;
 }
+
 h1 {
   color:rgb(230, 197, 50);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 4px 4px white
-  
+  text-shadow: 2px 2px rgb(253, 249, 249);
 }
 
 .Gems::before {
@@ -385,7 +481,7 @@ h1 {
   left: 0;
   width: 100%; 
   height: 220%;  
-  opacity: .4; 
+  opacity: .7; 
   z-index: -1;
   background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
   background-size: cover;
@@ -449,7 +545,14 @@ h1 {
     text-align: left;
     flex-direction: column;
   }
+
+  .topiccontainer {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
+
 
 
 

@@ -22,6 +22,7 @@ const Neighbours = () => {
     }
 
     return (
+        <div className="savingbees">
         <div className="neighbours">
             <div className="checkbox">
                 <FormControlLabel control={<Checkbox size="small" value="Siberian Wallflower" onChange={(event) => toggleCheckbox(event)}/>} label="Siberian Wallflower"/> 
@@ -49,7 +50,7 @@ const Neighbours = () => {
                 .map(bee => (<BeeCard data={bee} key={bee.id}/>))
                 }
             </div>
-            
+        </div>
         </div>
     )
 }
