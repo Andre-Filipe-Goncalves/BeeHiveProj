@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <Router>
       <ul className="Nav">
-            <li><NavLink activeClassName='active' exact to='/'>Home</NavLink></li>
-            <li><NavLink activeClassName='active' to='/BeeImportance'>The importance of bees</NavLink></li>
-            <li><NavLink activeClassName='active' to='/Gems'>The 5 gems of bees</NavLink></li>
+            <li><NavLink activeClassName='Navlink' exact to='/'>Home</NavLink></li>
+            <li><NavLink activeClassName='Navlink' to='/BeeImportance'>The importance of bees</NavLink></li>
+            <li><NavLink activeClassName='Navlink' to='/Gems'>The 5 gems of bees</NavLink></li>
         </ul>
         <Switch>
           <Route exact path ='/' component={Homepage} />
