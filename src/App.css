@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.savingbees {
+  position: relative;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.savingbees::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  opacity: 0.4;
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.savingbees h2 {
+  color: rgb(218, 142, 56);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
+}
+
+.savingbees h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.savingbees p {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+}
+
+.projectlist {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.projectlist div {
+  width: 300px;
+  padding: 20px;
+  border: solid 1px rgb(218, 142, 56);
+  border-radius: 25%;
+  margin: 1%;
+}
+
+.projectlist li {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.topiccontainer {
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: rgb(240, 240, 176);
+  padding: 20px;
+  margin: 0 25% 0 25%;
+  justify-content: center;
+  width: 50%;
+}
+
+.topiccontainer ul {
+  text-align: justify;
+  padding: 0;
+}
+
+.topiccontainer li {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.beedeathvideo iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  border: solid 1px rgb(218, 142, 56);
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: center;
+}
+
+.beedeathvideo {
+  overflow:hidden;
+  padding-bottom:75%;
+  position:relative;
+  height:0;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
 }
