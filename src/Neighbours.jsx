@@ -24,6 +24,7 @@ const Neighbours = () => {
     return (
         <div className="neighbours">
             <div className="checkbox">
+                <div className="checkboxHeader">Choose your Garden</div>
                 <FormControlLabel control={<Checkbox size="small" value="Siberian Wallflower" onChange={(event) => toggleCheckbox(event)}/>} label="Siberian Wallflower"/> 
                 <FormControlLabel control={<Checkbox size="small" value="Chinese Forget-Me-Not" onChange={(event) => toggleCheckbox(event)} />} label="Chinese Forget-Me-Not"/>
                 <FormControlLabel control={<Checkbox size="small" value="Baby Blue Eyes" onChange={(event) => toggleCheckbox(event)} />} label="Baby Blue Eyes" />
