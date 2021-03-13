@@ -4,15 +4,13 @@ const SavingBees = () => {
     return (
             <div className="savingbees">
                 <br/>
-                <br/>
-                <br/>
                 <div className="topiccontainer">
                 <h1>Why are bees in danger?</h1>
                     <br/>
                     <p>Bees have become increasingly endangered, which is confirmed by the recent reports by world-renowned organisations such as the United Nations, the IUCN or Greenpeace. The 2015 IUCN report states that nearly 10% of bees are facing extinction, and around 5% of them are probably endangered, while no data is available for nearly 57% of species. 
                     The number of pollinators is in decline around the world, while the need for pollination is on the rise, especially in developing countries. In some parts, this situation has become known as ”the pollinator crisis”.</p>
                     <br/>
-                    <div className="dangercontainer">
+                    <div className="beephotos">
                         <img src="https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615629478/varoza_czs_mcmfmr.jpg" />
                         <img src="https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615629469/nosema-nosemose_amu8ed.jpg" />
                         <img src="https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615629469/asian-hornet-preying-on-a-bee-pascal-goetgheluckscience-photo-library_ovsuvg.jpg" />
@@ -67,7 +65,7 @@ const SavingBees = () => {
                     <li>Bees for Development, United Kingdom</li>
                     <p>Bees for Development is an international organization that utilizes beekeeping as a tool to alleviate poverty and retain biodiversity around the world. They work in over 50 countries within local communities, and implement sustainable beekeeping techniques that use only local bees and local resources.</p>
                     </div>
-                    
+                    <br/>
                     <div>
                     <li> BEES for the World, Germany</li>
                     <p>BEES for the World is dedicated to designing sustainable supply chains for high quality organic-certified bee products all over the world. They work primarily within African countries to support forest beekeeping.</p>
@@ -140,7 +138,7 @@ const SavingBees = () => {
                     <br/>
                     <div>
                     <li>Flow, Australia</li>
-                    <p>Flow is a company that produces a new method for harvesting honey in a mor gentle way for the bees, while also creating community, educating on the importance of bees, and empowering beekeepers.</p>
+                    <p>Flow is a company that produces a new method for harvesting honey in a more gentle way for the bees, while also creating community, educating on the importance of bees, and empowering beekeepers.</p>
                     </div>
                     </div>
             </div>

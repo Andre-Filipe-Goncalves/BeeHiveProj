@@ -1,3 +1,226 @@
+/* General CSS */
+body {
+  margin: 0%;
+}
+
+h1 {
+  color:rgb(167, 106, 37);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+  text-shadow: 2px 2px rgb(253, 249, 249);
+  text-align: center;
+  padding: 50px;
+}
+
+h2 {
+  color:rgb(214, 162, 103);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+}
+
+p {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  font-size: 22px;
+  text-align: justify;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* NavBar in App.jsx*/
+.Nav {
+  display: flex;
+  background-color:white;
+  justify-content: center;
+}
+
+.Nav li { 
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  list-style-type: none;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+ul {
+  margin:0px;
+  padding:0px;
+}
+
+ul.Nav {
+  padding:50px;
+}
+
+a {
+  color: rgb(167, 106, 37);
+  text-decoration: none; 
+
+}
+
+a:hover {
+  color: rgb(214, 162, 103);
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+}
+
+/* Homepage*/
+
+.honeycomb {
+  float:right;
+  align-items: center;
+  padding-top: 20%;
+  padding-right: 5%;
+}
+
+.textonimage {
+  font-size: 60px;
+  background-color: white;
+  border-radius: 25px;
+  color:rgb(167, 106, 37);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 30px;
+}
+
+/* BeeImportance*/
+
+.BeeImportance {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.BeeImportance p {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+}
+
+.BeeImportance-general::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 120%;  
+  opacity: .7; 
+  height: 220%;  
+  opacity: .4; 
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
+  background-size: cover;
+}
+
+.honeycomb::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 120%;  
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492549/shutterstock_728427460bis_plp7sz.jpg");
+  background-size: cover;
+}
+
+
+
+.beephotos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+}
+
+.beephotos img {
+  width: 200px;
+  height: 200px;
+  height: auto;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.beephotos img:hover {
+  transform: scale(2.5);
+}
+
+
+.topiccontainer {
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: rgb(240, 240, 176);
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+  width: 70%;
+}
+
+.topiccontainer ul {
+  text-align: justify;
+  padding: 0;
+}
+
+.topiccontainer li {
+  color: rgb(8, 8, 8);
+  font-family: Calibri, sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 18px;
+}
+
+.beevideo iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  border: solid 1px rgb(218, 142, 56);
+  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: center;
+}
+
+.beevideo {
+  overflow:hidden;
+  padding-bottom:30%;
+  position:relative;
+  height:100%;
+  width:60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.beevideo iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  border: solid 1px rgb(218, 142, 56);
+  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: center;
+}
+
+/*Saving Bees*/
+
 .savingbees {
   position: relative;
   width: 100%;
@@ -26,22 +249,15 @@
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-weight: bolder;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px rgb(253, 249, 249);
 }
+
 
 .savingbees h3 {
   color: rgb(0, 0, 0);
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-weight: bolder;
-}
-
-.savingbees p {
-  color: rgb(8, 8, 8);
-  font-family: Calibri, sans-serif;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: justify;
 }
 
 .projectlist {
@@ -65,84 +281,143 @@
 .projectlist li {
   color: rgb(8, 8, 8);
   font-family: Calibri, sans-serif;
+  font-size: 22px;
   text-align: center;
   font-weight: bolder;
 }
 
-.topiccontainer {
-  box-sizing: border-box;
-  border-radius: 25px;
-  background-color: rgb(240, 240, 176);
-  padding: 20px;
-  margin: auto;
-  justify-content: center;
-  width: 60%;
-}
-
-.topiccontainer ul {
-  text-align: justify;
-  padding: 0;
-}
-
-.topiccontainer li {
+.projectlist p {
   color: rgb(8, 8, 8);
   font-family: Calibri, sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
+  font-size: 18px;
+  text-align: justify;
 }
 
-.beevideo iframe {
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-  border: solid 1px rgb(218, 142, 56);
-  border-radius: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  justify-content: center;
-}
 
-.beevideo {
-  overflow:hidden;
-  padding-bottom:30%;
-  position:relative;
-  height:100%;
-  width:60%;
-  display: flex;
-  flex-wrap: wrap;
+
+/* Gems*/
+
+.Gems {
+  width: 80%;
   margin: auto;
 }
 
-.dangercontainer {
+.Gems p {
+text-align: justify;
+padding-right: 20px;
+}
+
+.gems-container img {
+  width: auto; 
+  height: 300px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.gems-container {
+  box-sizing: border-box;
+	padding: 10px;
   display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  justify-content: center;
+  border-radius: 25px;
+  background-color:#ffffff;
+  margin-bottom: 5%;
+  align-items: center;
 }
 
-.dangercontainer img {
-  width: 200px;
-  height: auto;
-  overflow: hidden;
-  padding: 5px;
+h1 {
+  color:rgb(230, 197, 50);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px rgb(253, 249, 249);
 }
 
-figcaption {
-  text-align: center;
+.Gems::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 220%;  
+  opacity: .4; 
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492544/shutterstock_368463395_w4guip.jpg");
+  background-size: cover;
 }
 
-.dangercontainer img:hover {
-  transform: scale(2);
-}
-
+/*Responsiveness*/
 
 @media screen and (max-width:900px) {
+  .Gems {
+    flex-wrap: wrap;
+  }
+  .gems-container { 
+    border: rgb(207, 124, 29);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gems-container img {
+    width: 80%; 
+    height: auto;
+    padding:0px;
+  }
+
+  .textonimage {
+    font-size: 30px;
+    background-color: white;
+    border-radius: 25px;
+    color:rgb(167, 106, 37);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    text-align: center;
+  }
+  .honeycomb {
+    float: none;
+    padding-top: 30%;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .honeycomb::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    z-index: -1;
+    background: url("https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615492549/shutterstock_728427460bis_plp7sz.jpg");
+    background-size: cover;
+  }
+
+  .Nav li { 
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 8px;
+  }
+  ul.Nav {
+    padding:30px;
+    text-align: left;
+    flex-direction: column;
+  }
+
   .topiccontainer {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
   }
 }
+
+
+
+
+.slide-container {
+  width: 70%;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
