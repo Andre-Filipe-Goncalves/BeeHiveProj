@@ -648,6 +648,17 @@ padding-right: 20px;
     padding:0px;
   }
 
+  .gems-container2 { 
+    border: rgb(207, 124, 29);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gems-container2 img {
+    width: 80%; 
+    height: auto;
+    padding:0px;
+  }
+
   .textonimage {
     font-size: 30px;
     background-color: white;
