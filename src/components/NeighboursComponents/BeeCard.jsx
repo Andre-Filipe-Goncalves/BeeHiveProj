@@ -10,25 +10,25 @@ const {data} = props;
             <div className="beetext-wrapper">
                 <div className="beeprops">
                     <div className="namebox">
-                        <h4>Name</h4>
+                        <h3>Name</h3>
                         <p>{data.name}</p>
                     </div>
                     <div className="familybox">
-                        <h4>Family</h4>
+                        <h3>Family</h3>
                         <p>{data.family}</p>
                     </div>
                     <div className="sizebox">
-                        <h4>Size</h4>
+                        <h3>Size</h3>
                         <p>{data.size}</p>
                     </div>
                     <div className="temperbox">
-                        <h4>Temper</h4>
+                        <h3>Temper</h3>
                         <p>{data.temper}</p>
                     </div>
                 </div>
                 <br/>
                 <div className="funfacts">
-                    <h4>Fun Facts</h4>
+                    <h3>Fun Facts</h3>
                     <p>{data.funfacts}</p>
                 </div>
             </div>

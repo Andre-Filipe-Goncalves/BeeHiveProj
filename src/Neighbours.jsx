@@ -22,15 +22,17 @@ const Neighbours = () => {
     }
 
     return (
-        <div className="savingbees">
-            
-                <h1>Find Your Neighbour</h1>
+        <div className="neighbourbackground">
+                <br/>
+                <br/>
+                <br/>
                 <div className="headerText">
+                    <h1>Find Your Neighbour</h1>
                     <p>Having a friendly neighbour is the best! What if you could choose them?</p>
-                    <p className="bottomTextP">(.. But be careful about some undesired neighbourhood)</p>
-                </div>
-            
-        <div className="neighbours">
+                    <p>On the checkbox below, check the plants you would like to have in your garden, and see which species of bee they atract!</p>
+                    <p className="bottomTextP">(But be careful about some undesired neighbourhood - you may also end up atracting wasps!)</p>
+                    <br/>
+                    <div className="neighbours">
             <div className="checkbox">
                 <div className="checkboxHeader">Choose your Garden</div>
                 <FormControlLabel control={<Checkbox size="small" value="Siberian Wallflower" onChange={(event) => toggleCheckbox(event)}/>} label="Siberian Wallflower"/> 
@@ -51,6 +53,9 @@ const Neighbours = () => {
                 <FormControlLabel control={<Checkbox size="small" value="China Aster" onChange={(event) => toggleCheckbox(event)} />} label="China Aster"/>
                 <FormControlLabel control={<Checkbox size="small" value="New England Aster" onChange={(event) => toggleCheckbox(event)} />} label="New England Aster"/>
             </div>
+        </div>    
+        <br/>
+                </div>
             <div className="beelist">
 
                 {data
@@ -58,7 +63,6 @@ const Neighbours = () => {
                 .map(bee => (<BeeCard data={bee} key={bee.id}/>))
                 }
             </div>
-        </div>
         </div>
     )
 }

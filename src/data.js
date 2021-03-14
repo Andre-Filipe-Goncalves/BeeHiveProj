@@ -5,7 +5,7 @@ const bees = [
         family: "Halictidae",
         size: "Very small",
         temper: "Agressive when disturbed",
-        funfacts: "Attracted by sweat and use the salt for nutrition",
+        funfacts: "It is attracted by sweat and uses the salt for nutrition",
         flowers: ["Siberian Wallflower","Fleabane Daisy","Blue Flax","Plains Coreopsis","California Poppy","Globe Gilia","Tidy Tips","Corn Poppy","Lavender Hyssop","Chinese Forget-Me-Not","Indian Blanket","Purple Coneflower","China Aster"],
         pic: "https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615576053/SweatBee_lofwap.jpg"
     },

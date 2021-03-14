@@ -5,8 +5,13 @@ import './App.css';
 const Gems = () => {
     return (
     <div className='Gems'>
-        <h1>Gems of beehives</h1> 
-            <div class='gems-container'>
+        <br/>
+        <br/>
+        <br/>
+            <div className="background">
+                <br/>
+                    <h1>Gems of beehives</h1> 
+                    <div class='gems-container'>
                     <img src='https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615575880/Propolis_kby2lw.png' alt='Propolis' />
                     <p><h2>Propolis</h2>An essential hive product, propolis has numerous beneficial properties for your body, but also for your skin. Rich in enzymes, amino acids and minerals, it is used in several forms to adapt precisely to your needs and your preferences.
                     Produced by worker bees, propolis is a mixture of resins collected from trees and salivary secretions. Defending the hive, propolis ensures it is sealed, protecting it from external bacteria.
@@ -15,6 +20,7 @@ const Gems = () => {
                     As an antiseptic treatment: to allow a healthy environment for the development of broods.
                     The ideal period for collecting propolis is during the winter season, because at this time it is more easily removed from its supports.
                     </p>
+                    </div>
             </div>
             <div class='gems-container'>
                     <img src='https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615575889/honey_pjxymk.png' alt='Honey' />
