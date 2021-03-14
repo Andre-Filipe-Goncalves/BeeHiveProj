@@ -9,6 +9,7 @@ const BeeImportance = () => {
         <div className="BeeImportance" >
             <br/>
             <br/>
+            <br/>
             <div className="topiccontainer">
                 <h1>Why are they so important</h1>
                 <p> A study found that just two percent of wild bee species contributes 80 percent of the crop pollination visits observed globally. This means that if this small percentage of bees disappears then 80 percent of our agricultural system will collapse.

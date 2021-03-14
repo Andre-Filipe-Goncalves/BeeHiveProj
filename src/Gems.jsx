@@ -10,8 +10,10 @@ const Gems = () => {
         <br/>
             <div className="background">
                 <br/>
+                    <div>
                     <h1>Gems of beehives</h1> 
-                    <div class='gems-container'>
+                    </div>
+                    <div class='gems-container2'>
                     <img src='https://res.cloudinary.com/dxzkpsxhf/image/upload/v1615575880/Propolis_kby2lw.png' alt='Propolis' />
                     <p><h2>Propolis</h2>An essential hive product, propolis has numerous beneficial properties for your body, but also for your skin. Rich in enzymes, amino acids and minerals, it is used in several forms to adapt precisely to your needs and your preferences.
                     Produced by worker bees, propolis is a mixture of resins collected from trees and salivary secretions. Defending the hive, propolis ensures it is sealed, protecting it from external bacteria.
